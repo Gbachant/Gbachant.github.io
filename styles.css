@@ -21,3 +21,6 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
+hr {
+  border-width: 3px;
+}
