@@ -28,7 +28,13 @@
       <h1>RIPTA Dashboard</h1>
       <h5>January 2018</h5>
       <img src="ripta-animation.gif" alt="realtime RIPTA display animation" style="width:30% height:5%">
-      <p>RIPTA-Dashboard is python dashboard for viewing realtime data from its RIPTA's API. RIPTA-Dashboard is built using Ploty's framework <a href="https://plot.ly/products/dash/">Dash</a>.</p>
+      <p>RIPTA-Dashboard is python dashboard for viewing realtime data from its RIPTA's API. The data is first taken in and organized into a pandas dataframe then the the current location of each bus is mapped along with information about its speed, id, and bus route using Ploty's framework <a href="https://plot.ly/products/dash/">Dash</a>.</p>
+      <h4>Project Data</h4>
+      <p>All the data for the project came from <a href="http://realtime.ripta.com:81/">RIPTA's own API.</a> The API provides us with a json file of a whole range of the statuses of its buses and bus stops at the time it is read.</p>
+      <h4>Future Goals</h4>
+      <p>One of the most important goals for RIPTA-Dashboard is to eventually be able to get smoother updates of the onscreen data. I was successful at first by adding the property <code>Animation=True</code> to the <code>dcc.Graph</code> and was able to have smooth updates that only changed the position of data plots without entirely reloading the whole page and other unnecessary elements. Unfortunately the <code>Animate</code> property is still in beta and ended up breaking our ability to maintain camera position and zoom and as result would always go back to its default position after each API callback. For the time being I was forced to sacrifice smooth transitions for the ability to maintain camer position and figure since it is more important to have a constant state of reference when comparing the movements of objects.</p>
+      <p>There is also a lot more data in the API than just location, speed, vehicle id, and which route a bus is currently on. I eventually want use the data they give about the buses' delay to have a realtime punctuality display for each bus. I would also like to keep a running average of delay for each bus route and individual bus stop in order to help identify which have the best and worst punctuality and to make that with other data to potentially identify why.
+      <p><a href="https://github.com/Gbachant/RIPTA-dashboard">View project on Github</a></p>
     </div>
   </body>
 </html>
