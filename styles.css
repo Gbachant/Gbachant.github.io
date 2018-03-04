@@ -22,5 +22,13 @@ div.desc {
     text-align: center;
 }
 hr {
-  border-width: 3px;
+    border-width: 3px;
+}
+#intro-paragraph {
+    padding-right: 50%;
+}
+
+div.container-fluid{
+    font-family:"Adobe Heiti", sans-serif;
+    font-weight:"bold";
 }
