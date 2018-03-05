@@ -44,3 +44,9 @@ div.container-fluid{
 .carousel {
   background-color:rgb(127, 127, 127);
 }
+
+footer {
+  color:rgb(127, 127, 127);
+  display:block;
+  padding-bottom: auto;
+}
