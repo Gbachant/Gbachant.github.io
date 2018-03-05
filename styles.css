@@ -4,6 +4,7 @@ div {
 div.gallery {
     margin: 5px;
     padding-left: auto;
+    padding-right: auto;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
@@ -16,7 +17,7 @@ div.gallery:hover {
 
 div.gallery img {
     width: 100%;
-    height: 100%;
+    height: 100px;
 }
 
 div.desc {
@@ -49,4 +50,13 @@ footer {
   color:rgb(127, 127, 127);
   display:block;
   padding-bottom: auto;
+}
+
+div.thumbnail img {
+    height:250px;
+    width:100%;
+}
+
+#project-galler {
+  padding-right:50px;
 }
