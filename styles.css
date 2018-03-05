@@ -37,8 +37,8 @@ div.container-fluid{
 }
 
 #index-background {
-    background-image: url(pictures/ripta-animation.gif);
-    height:100%;
+    background-image: url(pictures/background.gif);
+    height:1200px;
 
 }
 
@@ -50,6 +50,8 @@ footer {
   color:rgb(127, 127, 127);
   display:block;
   padding-bottom: auto;
+  opacity:1;
+  background-color: rgba(127,127,127,0.2);
 }
 
 div.thumbnail img {
