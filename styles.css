@@ -38,7 +38,7 @@ div.container-fluid{
 
 #index-background {
     background-image: url(pictures/ripta-animation.gif);
-    height:auto;
+    height:100%;
 
 }
 
@@ -57,6 +57,10 @@ div.thumbnail img {
     width:100%;
 }
 
-#project-galler {
+#project-gallery {
   padding-right:50px;
+}
+
+.footer {
+  padding-bottom:75px;
 }
