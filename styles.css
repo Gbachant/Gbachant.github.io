@@ -3,9 +3,11 @@ div {
     }
 div.gallery {
     margin: 5px;
+    padding-left: auto;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
+    height: 180px;
 }
 
 div.gallery:hover {
@@ -14,7 +16,7 @@ div.gallery:hover {
 
 div.gallery img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 div.desc {
@@ -24,11 +26,21 @@ div.desc {
 hr {
     border-width: 3px;
 }
-#intro-paragraph {
+p {
     padding-right: 50%;
 }
 
 div.container-fluid{
-    font-family:"Adobe Heiti", sans-serif;
-    font-weight:"bold";
+    font-family: "Adobe Heiti", sans-serif;
+    font-weight: "bold";
+}
+
+#index-background {
+    background-image: url(pictures/ripta-animation.gif);
+    height:auto;
+
+}
+
+.carousel {
+  background-color:rgb(127, 127, 127);
 }
