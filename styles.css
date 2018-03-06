@@ -39,6 +39,7 @@ div.container-fluid{
 #index-background {
     background-image: url(pictures/background.gif);
     height:1000px;
+    padding-top:0;
 
 }
 
@@ -48,9 +49,12 @@ div.container-fluid{
 
 .carousel-caption {
     position: absolute;
-    left: 1000px;
+    left: auto;
+    right: auto;
     width: 50%;
-    height: 50%;
+    height: 100%;
+    background-color: #428bca;
+    opacity: 0.8;
     bottom:0;
     right:0;
 }
