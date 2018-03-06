@@ -29,7 +29,7 @@
     <div>
       <h1>RIPTA Dashboard</h1>
       <h5>January 2018</h5>
-      <img src="pictures/ripta-animation.gif" alt="realtime RIPTA display animation" style="width:30% height:5%">
+      <img id="ripta-background" src="pictures/ripta-animation.gif" alt="realtime RIPTA display animation">
       <p>RIPTA-Dashboard is python dashboard for viewing realtime data from its RIPTA's API. The data is first taken in and organized into a pandas dataframe then the the current location of each bus is mapped along with information about its speed, id, and bus route using Ploty's framework <a href="https://plot.ly/products/dash/">Dash</a>.</p>
       <h4>Project Data</h4>
       <p>All the data for the project came from <a href="http://realtime.ripta.com:81/">RIPTA's own API.</a> The API provides us with a json file of a whole range of the statuses of its buses and bus stops at the time it is read.</p>

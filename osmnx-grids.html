@@ -29,49 +29,93 @@
     <div>
       <h1>Analyzing Grids with OSMnx</h1>
       <h5>February 2018</h5>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
 
-        <div class="carousel-inner">
-          <div class="item active">
-            <img class="carousel-image" src="pictures/osmnx_nyc.png" alt="osmnx-grids of New York City by compass bearing">
-            <div class="carousel-caption">
-              <h3>Downtown Manhattan and Brooklyn</h3>
-              <p style="padding-left:33%">Each group of perpendicular bearings is represented by a different color. The grouping of grids becomes immediately apparent. What is most interested are groups of grids that aren't connected; though they are physically seperated they still follow the same bearings. For instance note the two purple bearing groups: one at the Brooklyn sides of the Brooklyn and Manhattan bridges and the other to the far east of Prospect Park in the bottom left corner of the image.</p>
+      <div class='container carousel'>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner text-center" role="listbox">
+                    <div class="item active">
+                        <div class="col-lg-8 pull-right">
+                            <img class="img-responsive" src="pictures/osmnx_nyc.png" alt="osmnx-grids of New York City by compass bearing">
+                        </div>
+                        <div class="col-lg-4">
+                            <h2>Downtown Manhattan and Brooklyn</h2>
+                            <p>
+                                Each group of perpendicular bearings is
+                                represented by a different color. The grouping
+                                of grids becomes immediately apparent. What is
+                                most interested are groups of grids that aren't
+                                connected; though they are physically seperated
+                                they still follow the same bearings. For
+                                instance note the two purple bearing groups: one
+                                at the Brooklyn sides of the Brooklyn and
+                                Manhattan bridges and the other to the far east
+                                of Prospect Park in the bottom left corner of
+                                the image.
+                            </p>
+                          <a class='btn btn-info pull-right'
+                               href="/article/show/sed-vel-lectus/9">
+                                <i class="fa fa-long-arrow-right"> </i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-lg-8 pull-right">
+                            <img class="img-responsive" src="pictures/osmnx_nyc_closeup.png" alt="closeup of osmnx-grids of New York City">
+                        </div>
+                        <div class="col-lg-4">
+                            <h2>Closeup of downtown Manhattan and Brooklyn</h2>
+                            <p>
+                                Note how the purple bearings on the Brooklyn
+                                ends of the Manhattan and Brooklyn bridges merge
+                                with and become part of the grids of the dark
+                                orange bearings just south of the Brooklyn Navy
+                                Yard. One of the main things I was interested in
+                                doing with this project was analyzing the
+                                'borders' of groups of grids and how their edges
+                                met to bond together.
+                            </p>
+                           <a class='btn btn-info pull-right'
+                               href="/article/show/sed-vel-lectus/9">
+                                <i class="fa fa-long-arrow-right"> </i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-lg-8 pull-right">
+                            <img class"img-responsive" src="pictures/osmnx_williamsburg.png" alt="osmnx-grids of Williamsburg, Brooklyn">
+                        </div>
+                        <div class="col-lg-4">
+                            <h2>Williamsburg, Brooklyn</h2>
+                            <p>
+                                A close up of Williamsburg, a neighborhood of
+                                Brooklyn with a particularly interesting street
+                                pattern. Note the rainbow pattern on the curved
+                                sections of the Williamsburg Bridge and
+                                Interstate 278 as it changes as its segments
+                                change bearings.
+                            </p>
+                            <a class='btn btn-info pull-right'
+                               href="/article/show/sed-vel-lectus/9">
+                                <i class="fa fa-long-arrow-right"> </i></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-          </div>
-
-          <div class="item">
-            <img src="pictures/osmnx_nyc_closeup.png" alt="closeup of osmnx-grids of New York City">
-            <div class="carousel-caption">
-              <h3>Closeup of downtown Manhattan and Brooklyn</h3>
-              <p style="padding-left:33%">Note how the purple bearings on the Brooklyn ends of the Manhattan and Brooklyn bridges merge with and become part of the grids of the dark orange bearings just south of the Brooklyn Navy Yard. One of the main things I was interested in doing with this project was analyzing the 'borders' of groups of grids and how their edges met to bond together. </p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="pictures/osmnx_williamsburg.png" alt="osmnx-grids of Williamsburg, Brooklyn">
-            <div class="carousel-caption">
-              <h3>Williamsburg, Brooklyn</h3>
-              <p style="padding-left:33%">A close up of Williamsburg, a neighborhood of Brooklyn with a particularly interesting street pattern. Note the rainbow pattern on the curved sections of the Williamsburg Bridge and Interstate 278 as it changes as its segments change bearings.</p>
-            </div>
-          </div>
         </div>
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
       <p>This is project I have been interested in for quite some time now. It was inspired by looking at the beautiful and chaotic mixing together of grids in New York City, <a href="https://www.google.com/maps/place/Brooklyn,+NY/@40.6496725,-73.9659865,12.5z/data=!4m5!3m4!1s0x89c24416947c2109:0x82765c7404007886!8m2!3d40.6781784!4d-73.9441579">Brookyn</a> in particular. I became interested in finding a way to organize and analyze the relationships of the various grids based on angles of their bearings. It wasn't until I found <a href="https://github.com/gboeing/osmnx">OSMnx</a>, a python package for working with and analyzing OpenStreetMap files made by <a href="http://geoffboeing.com/">Geoff Boeing</a>, that I was able to find the right tool to do so.</p>
       <p>OSMnx comes with many useful functions for analyzing maps by default such as the ability graph the average bearing of a set of streets or 'edges' as they are called. OSMnx already comes with abilty to retrieve the bearings of a network's streets and <a href="https://github.com/gboeing/osmnx-examples/blob/master/notebooks/15-calculate-visualize-edge-bearings.ipynb">graph their frequency</a>, but this wasn't enough.</p>
       <p>Anyone familiar with working with OpensStreetMap files will know that they aren't exactly perfect representations. This is due to the very nature of how they are created. OSM files are composed of nodes and ways. Most of these nodes and ways placed by humans physically overlaying them on satellite imagery and can be prone to human error.  As a result, nodes and ways that should theoretically be perfectly aligned and ordered are not.</p>

@@ -44,20 +44,6 @@ div.container-fluid{
 
 }
 
-.carousel {
-  background-color:rgb(127, 127, 127);
-}
-
-.carousel-caption {
-    width: 75%;
-    height: 100%;
-    margin-left:25%;
-    margin-right:25%;
-}
-
-.carousel-image {
-}
-
 footer {
   color:rgb(127, 127, 127);
   display:block;
@@ -94,3 +80,13 @@ div.thumbnail img {
 .caption-title {
   margin-top:0;
 }
+
+#ripta-background {
+  margin-bottom:10px;
+}
+
+.carousel {padding-bottom: 25px}
+.carousel img{padding-top: 20px;}
+.carousel h2 {color: #0072b5;}
+.carousel h2 small{color: #289bde}
+.carousel col-lg-4 p {text-align: center;}
