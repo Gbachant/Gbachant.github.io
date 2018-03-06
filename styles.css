@@ -57,6 +57,7 @@ div.container-fluid{
     opacity: 0.8;
     bottom:0;
     right:0;
+    margin-left:25%;
 }
 
 .carousel-image {
@@ -81,4 +82,11 @@ div.thumbnail img {
 
 .footer {
   padding-bottom:75px;
+}
+
+#intro-paragraph {
+  padding-left:40px;
+  padding-right:120px;
+  padding-bottom:20px;
+  padding-top:15px;
 }
