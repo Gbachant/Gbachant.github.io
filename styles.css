@@ -26,7 +26,7 @@ div.desc {
 }
 
 hr {
-    border-width: 3px;
+    border-width: 2px;
 }
 p {
     padding-right: 50%;
@@ -85,8 +85,18 @@ div.thumbnail img {
   margin-bottom:10px;
 }
 
-.carousel {padding-bottom: 25px}
-.carousel img{padding-top: 20px;}
+.carousel {
+  padding-bottom: 25px;
+  padding-left:0;
+  padding-right:50px;
+  width:100%;
+}
+.carousel img {padding-top: 20px;}
 .carousel h2 {color: #0072b5;}
-.carousel h2 small{color: #289bde}
 .carousel col-lg-4 p {text-align: center;}
+
+.carousel-subcaption {
+  padding-right:0;
+  margin-left:15%;
+  margin-right:15%;
+}
