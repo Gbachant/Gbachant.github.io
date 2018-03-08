@@ -92,13 +92,14 @@ div.thumbnail img {
   height:100%;
 }
 
-.carousel h2 {color: #0072b5;}
+.carousel h1 {color: #0072b5;}
 .carousel col-lg-4 p {text-align: center;}
 
 .carousel-subcaption {
   padding-right:0;
   margin-left:15%;
   margin-right:15%;
+  font-size:150%;
 }
 
 .carousel-image{
