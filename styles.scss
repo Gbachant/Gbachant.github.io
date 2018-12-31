@@ -1,0 +1,112 @@
+div {
+  padding-left: 50px;
+  &.gallery {
+    margin: 5px;
+    padding-left: auto;
+    padding-right: auto;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    height: 180px;
+    &:hover {
+      border: 1px solid #777;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  &.thumbnail img {
+    height: 250px;
+    width: 100%;
+  }
+  &.container-fluid {
+    font-family: "Adobe Heiti", sans-serif;
+    font-weight: "bold";
+  }
+}
+
+footer {
+  color: rgb(127, 127, 127);
+  display: block;
+  padding-bottom: auto;
+  opacity: 1;
+  background-color: rgba(127, 127, 127, 0.2);
+}
+
+p {
+  padding-right: 50%;
+}
+
+.caption-title {
+  margin-top: 0;
+}
+
+.carousel {
+  padding-bottom: 25px;
+  padding-left: 0;
+  padding-right: 50px;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.carousel-subcaption {
+  padding-right: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 150%;
+}
+
+.carousel {
+  col-lg-4 p {
+    text-align: center;
+  }
+  h1 {
+    color: #0072b5;
+  }
+}
+
+.footer {
+  padding-bottom: 75px;
+}
+
+.subcaption {
+  padding-right: 0;
+  color: rgb(127, 127, 127);
+}
+
+.thumbnail-zoom {
+  transform: scale(1.05);
+}
+
+#index-background {
+  background-image: url(pictures/background.gif);
+  height: 1000px;
+  padding-top: 0;
+}
+
+#intro-paragraph {
+  padding-left: 40px;
+  padding-right: 120px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+#project-gallery {
+  padding-right: 50px;
+}
+
+#ripta-background {
+  margin-bottom: 10px;
+}
