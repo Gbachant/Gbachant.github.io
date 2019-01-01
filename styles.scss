@@ -21,7 +21,6 @@ div {
     text-align: center;
   }
   &.thumbnail img {
-    height: 250px;
     width: 100%;
   }
   &.container-fluid {
@@ -84,6 +83,11 @@ p {
 .subcaption {
   padding-right: 0;
   color: rgb(127, 127, 127);
+}
+
+.thumbnail-image-container{
+  padding-left: 0;
+  overflow: hidden;
 }
 
 .thumbnail-zoom {
