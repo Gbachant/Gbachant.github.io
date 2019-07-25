@@ -4,4 +4,8 @@ $(document).ready(function(){
   }).on('mouseleave', event => {
     $(event.currentTarget).find('img').removeClass('thumbnail-zoom');
   })
+  
+  $('.carousel').carousel({
+  interval: false
+  });
 });
