@@ -27,21 +27,66 @@
       </div>
     </nav>
     <div>
-      <h1>Analyzing the Linguistic Habits of Songwriters</h1>
+      <h1>Analyzing the Rhyming Habits of Songwriters</h1>
       <h5>April 2018</h5>
-      <p>This project was inspired by the peculiar songwriting habits of
-        Ray Davies(altough for ease of computing the testing was done on
-        Broadcast, a band with a much smaller discography). Although the
-        majority of pop songs tend to generally follow a rhyme scheme of
+      <p>
+        This project was inspired by the peculiar songwriting habits of
+        Ray Davies. Although the
+        majority of pop songs tend to generally follow the traditional rhyme scheme of
         ABAB CDCD etc., I couldn't help but notice that Ray Davies had a habit
         of choosing lyrics that almost deliberately didn't rhyme. I began to
         wonder if there was a way to quantifiy and analyze this phenomena and
-        even find other insights into artist's lyrical habits.
+        even find other insights into artist's lyrical habits, so I created a
+        jupyter notebook to test that thought.
       </p>
+      <h4>Getting the Data</h4>
+      <p>
+        The lyrics for an artist's discography was obtained by using the python
+        library <a href="https://github.com/jameswenzel/pylyrics3">pylyrics3</a>,
+        which returns a nested dictionary of the artist's songs by album. From
+        there I got the rhyme type (couplet, limerick, rondeau etc.) for for each song using the library
+        <a href="https://github.com/hyperreality/Poetry-Tools">Poetry-tools</a>.
+        Most importantly for this project I created the function <code>get_rhyme_ratio()</code> to get the rhyme ratio for each song
+        and then organized all of the relevant data into a <a href="https://pandas.pydata.org/">Pandas</a> Dataframe.
+      </p>
+      <h4>Rhyme Ratio</h4>
+        <p>
+          From my own experience writing songs and poetry and the observations of
+          other writers I've noticed that it can actually be easier to write lines that rhyme.
+          It can also be all too easy to stay within the safe ABAB CDCD rhyme scheme.
+          That's why the unique songwriting of Ray Davies of The Kinks caught the attention of mine.
+          His songs had a frequent subversion of convential pop rhyming or so it did seem.
+        </p>
+        <p>Rhyme ratio was a variable I came up with to try to quantitatively measure how frequently one utilizes rhymes in their writing.
+          It is essentially the total number of unique ending phonemes divided by
+          the total number of lines of a song. A song with a rhyme scheme of ABAB CDCD EFEF
+          would have a <code>rhyme_ratio</code> of 0.5 while a rhyme scheme of ABCC DEFF GHIJ would have a <code>rhyme_ratio</code> of 0.75.
+          This was the metric I used to try and determine how posodically creative a song was.
+        </p>
+      <h4>Graphing the Results</h4>
+        <p>After all the data was sent to the Pandas Dataframe, I then used a combination of <a href="https://matplotlib.org/index.html">Matplotlib</a>
+          and <a href="https://seaborn.pydata.org/">Seaborn</a> to plot the results.
+        </p>
+        <h5>Rhyme Ratio by Album over Time</h5>
+        <img src="pictures/rhyme_ratio_scatter.png" alt="Scatter plot of rhyme ratio over time for The Kinks">
+        <img src="pictures/rhyme_ratio_violin.png" alt="Violin plot of rhyme ratio over time for The Kinks">
+        <img src="pictures/rhyme_ratio_mean.png" alt="Line plot of mean rhyme ratio over time for The Kinks">
+        <img src="pictures/rhyme_ratio_full.png" alt="Individual and mean plot of rhyme ratio over time for The Kinks">
+        <h5>Rhyme Type by Album over Time</h5>
+        <img src="pictures/rhyme_type.png" alt="Bar chart of rhyme type over time for The Kinks">
+        <h5>Instrumental vs Lyrical Song by album over Time</h5>
+        <img src="pictures/instrumental.png" alt="Bar chart of instrumentality by album over time for The Kinks">
+      <h4>Conclusion</h4>
+        <p>Looking at the line graph for mean rhyme ratio over time I did validate my personal opinion that the 'Golden Era' Kinks (albums between 'Something Else (1967)' and 'Preservation Act 2 (1974)') were more creative than the rest of their work.
+          Upon looking at the mean rhyme ratio matched over the individual rhyme ratio violin plot I quickly realized however that the difference in mean rhyme ratios was negligible.
+        </p>
+        <p>Are there any real conclusions to be drawn from the data? Not really but it was very fun building and interesting to look at the way we can try to measure subject things like creativity with objective metrics.
+          If you want to see the whole Jupyter Notebook and play around with it with your favorite artists
+          the link is <a href="https://github.com/Gbachant/rhyme-scheme/blob/master/rhyme-scheme.ipynb">here</a>.
     </div>
     <hr>
     <div>
-      <p><a href="https://github.com/Gbachant/rhyme-scheme" class="footer">View project on GitHub</a></p>
+      <p><a href="https://github.com/Gbachant/rhyme-scheme/blob/master/rhyme-scheme.ipynb" class="footer">View project on GitHub</a></p>
     </div>
   </body>
 </html>
